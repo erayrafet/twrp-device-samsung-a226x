@@ -18,7 +18,7 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/aHVzY2g/twrp-device-samsung-a22x'
+        default: 'https://github.com/erayrafet/twrp-device-samsung-a226x'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
@@ -34,7 +34,7 @@ on:
       RELEASE_NAME:
         description: 'RELEASE_NAME'
         required: true
-        default: 'v1.00.0-alpha'
+        default: '3.0'
 
 env:
   TZ: Europe/Berlin
@@ -87,7 +87,7 @@ jobs:
         mkdir workspace
         cd workspace
         echo "::set-output name=pwd::$(pwd)"
-        git config --global user.name "aHVzY2g GitHub actions bot"
+        git config --global user.name "erayrafet GitHub actions bot"
         git config --global user.email ""
         repo init --depth=1 -u ${{ github.event.inputs.LIBRARY_URL }} -b ${{ github.event.inputs.LIBRARY_BRANCH }}
       id: pwd

@@ -15,7 +15,7 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
   DEVICE: a22x
-  DT_LINK: https://github.com/aHVzY2g/twrp-device-samsung-a22x/
+  DT_LINK: https://github.com/erayrafer/twrp-device-samsung-a226x/
   DT_PATH: device/samsung/a22x
   TARGET: recoveryimage
   OUTPUT: recovery.tar
@@ -74,5 +74,5 @@ jobs:
          uses: actions/upload-artifact@v3
          with:
             name: twrp-recovery
-            path: /home/runner/work/twrp-device-samsung-a22x/twrp-device-samsung-a22x/work/out/target/product/a22x/recovery.tar
+            path: /home/runner/work/twrp-device-samsung-a226x/twrp-device-samsung-a226x/work/out/target/product/a22x/recovery.tar
             retention-days: 5

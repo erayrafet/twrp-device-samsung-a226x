@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := a226x
+PRODUCT_RELEASE_NAME := a22x
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -34,8 +34,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a22x/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_a226x
-PRODUCT_DEVICE := a226x
+PRODUCT_NAME := twrp_a22x
+PRODUCT_DEVICE := a22x
 PRODUCT_MODEL := SM-A226B/BR
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
